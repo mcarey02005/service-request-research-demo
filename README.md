@@ -6,6 +6,8 @@ Minimal individual research project for the Capstone Research Milestone. It demo
 
 Create database: `CREATE DATABASE service_demo;`
 
+Set the local database password for the current PowerShell session: `$env:DB_PASSWORD='your-mysql-password'`
+
 Start API: `mvn spring-boot:run` (Swagger: http://localhost:8080/swagger)
 
 Start UI: `cd frontend; npm install; npm run dev`
