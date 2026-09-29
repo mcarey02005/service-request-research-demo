@@ -1,0 +1,3 @@
+CREATE TABLE users (id BIGINT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(50) NOT NULL UNIQUE, password VARCHAR(100) NOT NULL);
+CREATE TABLE requests (id BIGINT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(100) NOT NULL, details VARCHAR(500), status VARCHAR(20) NOT NULL, scheduled_for DATE, user_id BIGINT NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id));
+INSERT INTO users(username,password) VALUES ('demo','demo');
